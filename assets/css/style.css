@@ -1,0 +1,216 @@
+@font-face {
+  font-family: "Lora";
+  src: url("../font/Lora-VariableFont_wght.ttf");
+  style: "regular";
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../font/OpenSans-Regular.ttf");
+  font-weight: 400;
+  style: "regular";
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../font/OpenSans-Regular.ttf");
+  font-weight: 700;
+  style: "regular";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* .alt {
+  font-family: "Lora";
+}
+
+* body {
+  background-color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body header {
+  position: fixed;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  height: 60px;
+  color: #F5F5F5;
+  background-color: #545454;
+}
+
+* body header .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 44px;
+  margin-left: 17px;
+}
+
+* body header .title span {
+  font-family: "Open Sans";
+  font-size: 12px;
+}
+
+* body header .title span.main {
+  position: relative;
+  top: -3px;
+  font-family: "Lora";
+  font-size: 24px;
+  font-weight: 700;
+}
+
+* body header .form-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: 10px;
+  height: 40px;
+}
+
+* body header .form-option img {
+  margin-right: 10px;
+}
+
+* body header .form-option .forms > span {
+  font-family: "Lora";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+* body header .form-option .forms > span:hover {
+  color: #545454;
+  background-color: #F5F5F5;
+}
+
+* body content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 80px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+* body content .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+* body content .title span {
+  display: inline-block;
+  width: 400px;
+  text-align: center;
+  font-family: "Lora";
+  font-size: 18px;
+  color: #545454;
+}
+
+* body content ul {
+  list-style: none;
+  width: 100%;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Open Sans";
+  font-size: 24px;
+  color: #545454;
+}
+
+* body content ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  width: 100%;
+}
+
+* body content ul li:nth-child(2n) {
+  background-color: #ececec;
+}
+
+* body content ul li:hover {
+  border: 0.5px solid #545454;
+}
+
+* body content ul li[data-lttr]::before {
+  content: attr(data-lttr);
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 24px;
+  position: absolute;
+  left: -50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #545454;
+  color: #F5F5F5;
+}
+
+* body content ul li span {
+  display: inline-block;
+  width: 400px;
+  text-align: center;
+  line-height: 50px;
+}
+/*# sourceMappingURL=style.css.map */
